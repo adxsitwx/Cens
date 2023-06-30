@@ -1,0 +1,91 @@
+<html lang="es">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <title></title>
+  </head>
+
+  <body class="bg-primary d-flex justify-content-center align-items-center vh-100" style="background: url(./img/fondo.jpg) no-repeat; background-size:cover">
+    <div class="box"></div>
+     <!-- ============================================ -->
+     <!--                    CENTRO                   -->
+     <!-- ============================================ -->
+    <div class="bg-white p-5 rounded-5 text-primary" style="width: 32rem">
+        <form class="row g-3 needs-validation" method="POST" novalidate th:action"@{/signin}" accept="#" th:object="${institucion}">
+      
+      
+     <!--                  Logo                  -->
+      <div class="d-flex justify-content-center needs-validation">
+        <img src="./img/logo-cens.png" alt="login-icon" style="height: 7rem"/>
+      </div>
+      <div class="text-center fs-1 fw-bold">Registro</div>
+      
+      <!--             Cuadro sesión                -->
+      <div class="input-group mt-4 pr" id="Sesion">
+        <div class="input-group-text bg-primary" href="#Sesion">
+          <img src="./assets/username-icon.svg" alt="username-icon" style="height: 1rem"/>
+        </div>
+        <input class="form-control bg-light" type="text" placeholder="Usuario" value= "" required th:field="*{name_Empresa}"/>
+        <div class="form-control valid-feedback">Todo correcto</div>
+        <div class="invalid-feedback">Es necesario rellenar el campo</div>
+      </div>
+
+
+      <div class="input-group mt-1">
+        <div class="input-group-text bg-primary">
+          <img src="./assets/password-icon.svg" alt="password-icon" style="height: 1rem"/>
+        </div>
+        <input
+          class="form-control bg-light" type="password" placeholder="Contraseña"/>
+          <div class="form-control valid-feedback">Todo correcto</div>
+        <div class="invalid-feedback">Es necesario rellenar el campo</div>
+      </div>
+      <div class="input-group mt-1">
+        <div class="input-group-text bg-primary">
+          <img src="./assets/nc-passwords.svg" alt="nc-passwords" style="height: 1rem"/>
+        </div>
+      
+      </div>
+      <div class="input-group mt-1">
+        <div class="input-group-text bg-primary">
+          <img src="./assets/email-1573.svg" alt="email-1573" style="height: 1rem"/>
+        </div>
+        <input
+          class="form-control bg-light" type="email" placeholder="Email" th:field="*{email}"/>
+          <div class="form-control valid-feedback">Todo correcto</div>
+        <div class="invalid-feedback">Es necesario rellenar el campo</div>
+      </div>
+      <div class="input-group mt-1">
+        <div class="input-group-text bg-primary">
+          <img src="./assets/contacts.svg" alt="contacts" style="height: 1rem"/>
+        </div>
+	        <input
+	          class="form-control bg-light" type="text" placeholder="RUT (Ej: 12345678-9)" th:field="*{rutEmpresa}"/>
+          <div class="form-control valid-feedback">Todo correcto</div>
+        <div class="invalid-feedback">Es necesario rellenar el campo</div>	
+      </div>
+      <div class="input-group mt-1">
+        <div class="input-group-text bg-primary">
+          <img src="./assets/contact-phone.svg" alt="contact-phone" style="height: 1rem"/>
+        </div>
+        <input
+          class="form-control bg-light requerido" type="tel" placeholder="Número Telefónico (Ej: 987654321)" th:field="*{telefono}"/>
+          <div class="form-control valid-feedback">Todo correcto</div>
+        <div class="invalid-feedback">Es necesario rellenar el campo</div>
+      </div>
+    </form>
+     
+
+      <!--                  Ingreso                  -->
+      <a href="http://localhost:8080/crear" type="sumbit" class="btn btn-primary text-white w-100 mt-4 fw-semibold shadow-sm">
+        Confirmar
+      </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="main.js"></script>
+
+
+  </body>
+</html>
