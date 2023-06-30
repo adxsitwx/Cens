@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css"
+    <title></title>
+  </head>
+  <body>
+    
+     <!-- ============================================ -->
+     <!--                  ENCABEZADO                  -->
+     <!-- ============================================ -->
+     <header class="container-fluid bg-primary d-flex justify-content-center"></div>
+        <p class="text-light mb-0 p-2 fs-6">Centro Nacional en Sistemas de información en Salud</p>
+     </header>
+
+     <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 sticky-top" id="Menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="http://127.0.0.1:5500/src/main/resource/index.html">
+            <span class="text-primary fs-5 fw-bold"
+            id="cens">Ｃ☰ＮＳ</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#secciones" role="button" data-bs-toggle="dropdown">Secciones</a>
+                <ul class="dropdown-menu pull">
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/src/main/resource/Trazabilidad.html">Trazabilidad</li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/src/main/resource/Graficos.html">Graficos</li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/src/main/resource/Empresas.html">Empresas</li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/src/main/resource/Evaluador.html">Evaluador</li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+     <!-- ============================================ -->
+     <!--                  BOODY                  -->
+     <!-- ============================================ -->
+
+
+     <section class="w-50 mx-auto text-center pt-5" id="secciones4">
+      <h1 class="p-3 fs-2 border-top botder-3"><span class="text-primary"> Graficos</span></h1>
+      <p class="p-3 fs-6"><span class="text-primary"><button class="fs-7 mt-4 px-4 pb-1 btn btn-primary" type="button"> Generar</button></span></p>
+     </section>
+     <section class="content">
+      <h1>1er</h1>
+      <canvas id="myChart" height="300" width="300"></canvas>
+     </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js" integrity="sha512-mlz/Fs1VtBou2TrUkGzX4VoGvybkD9nkeXWJm3rle0DPHssYYx4j+8kIS15T78ttGfmOjH0lLaBXGcShaVkdkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+  </body>
+  <footer class="footer"></footer>
+</html>
